@@ -49,25 +49,18 @@ int main(){
              
             while(!st.empty()&& Presedence(st.top())>=Presedence(ans[i])){
                 res+=st.top();
-               
-                st.pop();
+               st.pop();
             }
             st.push(ans[i]);
         } else{
-             
-            while(!st.empty()&& Presedence(st.top())>Presedence(ans[i])){
+             while(!st.empty()&& Presedence(st.top())>Presedence(ans[i])){
                 res+=st.top();
                 st.pop();
-              
-
-            }
+              }
              st.push(ans[i]);
-
-        }
-            
-            }
-
-    }
+           }
+             }
+          }
  
       while(!st.empty()){
         res+=st.top();
@@ -75,6 +68,4 @@ int main(){
       }
        reverse(res.begin(),res.end());
        cout<<res;
-       
-       
-}
+     }
