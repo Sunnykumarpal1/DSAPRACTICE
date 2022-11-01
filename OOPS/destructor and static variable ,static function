@@ -17,14 +17,16 @@ class hero{
          ~hero(){
             cout<<"destructor is called";
          }
-         
-           
-    
-
+          static int random(){
+            return  a;
+         }
 };
 //static variable -> it can be accessed without object; here static varible belong to oobject
  int hero::a=10;
 int main(){
+
+// this is for static function .ie. it can access only static data member
+  cout<<hero::random;
    cout<<hero::a;
       hero b;
       cout<<b.a;
