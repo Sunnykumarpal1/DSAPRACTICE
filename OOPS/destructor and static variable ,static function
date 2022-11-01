@@ -26,6 +26,7 @@ class hero{
 int main(){
 
 // this is for static function .ie. it can access only static data member
+// and we don't have a this keyword in static function
   cout<<hero::random;
    cout<<hero::a;
       hero b;
