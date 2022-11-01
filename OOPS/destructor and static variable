@@ -22,7 +22,7 @@ class hero{
     
 
 };
-//static variable -> it can be accessed without object;
+//static variable -> it can be accessed without object; here static varible belong to oobject
  int hero::a=10;
 int main(){
    cout<<hero::a;
