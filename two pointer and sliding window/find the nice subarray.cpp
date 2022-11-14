@@ -49,6 +49,12 @@ int numberOfSubarrays(vector<int>& nums, int k) {
         return cnt;
     }
 /* 2nd approach using 2 pointer with tc->o(n) & sc->O(1)*/
+//  here the algorithm is very easy 
+ algo
+ * we keep counting the odd number through the pointer i when the odd number becomes either greater or equal to k we move 
+ * we set the count as 1 and move our j till it reaches our odd number 
+ * then atlast we add the count to the final answer 
+ * so when the number is even we just add the count to the final anwer.
   int numberOfSubarrays(vector<int>& nums, int k) {
         int j=0,count=0,total=0;
         int n=nums.size();
@@ -69,4 +75,6 @@ int numberOfSubarrays(vector<int>& nums, int k) {
         }
         return total;
     }
-                                      
+              
+ 
+ 
