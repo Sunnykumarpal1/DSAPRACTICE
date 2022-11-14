@@ -48,3 +48,25 @@ int numberOfSubarrays(vector<int>& nums, int k) {
         }
         return cnt;
     }
+/* 2nd approach using 2 pointer with tc->o(n) & sc->O(1)*/
+  int numberOfSubarrays(vector<int>& nums, int k) {
+        int j=0,count=0,total=0;
+        int n=nums.size();
+        int odd=0;
+        for(auto i=0;i<n;i++){
+            if(nums[i]&1){
+                odd++;
+                if(odd>=k){
+                    count=1;
+                    while(!(nums[j++]&1)) 
+                        count++;
+                
+                total+=count;
+                }
+            }else if(odd>=k){
+                total+=count;
+            }
+        }
+        return total;
+    }
+                                      
