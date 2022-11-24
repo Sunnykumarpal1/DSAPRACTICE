@@ -1,0 +1,6 @@
+bool checkKthBit(int n, int k)
+    {
+        int i=1;
+        if(n&(i<<k)) return 1;
+        return 0;
+    }
