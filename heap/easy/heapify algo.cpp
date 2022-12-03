@@ -1,3 +1,5 @@
+//here we need to bring the node to it's correct position
+// here we don't need to check  for leaf node 
 #include<bits/stdc++.h>
 using namespace std;
 void heapify(vector<int>&arr,int ind,int n){
