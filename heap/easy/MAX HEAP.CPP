@@ -28,6 +28,7 @@ Constraints:
 K ≤ N
 1 ≤ array[i] ≤ 105
 */
+/* APPORCH IS VERY SIMPLE SINCE THIS IS MINIMUM HEAP IT HAVE MINIMUM ELEMENT AT THE TOP OF THE QUEUE SO WHEN EVER WE ENCOUNTER AN ELEMENT GREATER THAN THAT ELEMENT WE REMOVE THE MINIMUM ELEMENT AND ADD ELEMENT*/
 vector<int> kLargest(int arr[], int n, int k)
     {
         priority_queue<int,vector<int>,greater<int>>pq;
