@@ -20,5 +20,31 @@
          }
          return sum;
     }
+or 
+ long long KthSmallest(long long a[],long long  k,long long  n){
+        priority_queue<long long >pq;
+        for(auto i=0;i<k;i++){
+            pq.push(a[i]);
+        }
+        for(auto i=k;i<n;i++){
+            if(a[i]<pq.top()){
+                pq.pop();
+                pq.push(a[i]);
+            }
+        }
+        return pq.top();
+    }
+    long long sumBetweenTwoKth( long long A[], long long N, long long K1, long long K2)
+    {
+          long long first=KthSmallest(A,K1,N),second=KthSmallest(A,K2,N);
+        
+         long long sum=0;
+         for(auto i=0;i<N;i++){
+             if(A[i]>first&&A[i]<second){
+                 sum+=A[i];
+             }
+         }
+         return sum;
+    }
 tc->O(n log(n))
 sc->O(k2-1)
