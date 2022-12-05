@@ -20,6 +20,8 @@
          }
          return sum;
     }
+tc->O(n log(n))
+sc->O(k2-1)
 or 
  long long KthSmallest(long long a[],long long  k,long long  n){
         priority_queue<long long >pq;
@@ -46,5 +48,5 @@ or
          }
          return sum;
     }
-tc->O(n log(n))
-sc->O(k2-1)
+ TC->O(N LOGN)
+ SC->O(2N) ->(i.e O(N))
