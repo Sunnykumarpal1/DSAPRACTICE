@@ -73,8 +73,8 @@ bool operator()(data &a,data &b){
 }
 };
 */
-// brute force
-//User function Template for C++
+
+
 
 
  
